@@ -10,32 +10,41 @@
 </head>
 <body>
     <!-- header section -->
-        <header class="bg-black py-10 text-white font-mono">
+        <header class="bg-black py-6 lg:py-12 text-white font-mono">
             <!--header container  -->
-            <div class="conteiner flex items-center justify-between space-x-16">
+            <div class="conteiner flex items-center justify-between space-x-8 lg:space-x-16">
                 <!-- logo -->
-                <a href="#" class="text-4xl font-bold text-white hover:text-[#dc2626] ">Kafkal</a>
+                <a href="#" class="text-4xl lg:text-6xl font-bold text-white hover:text-[#dc2626] ">Kafkal</a>
+                <!-- mobileenu -->
+                <div class="block md:hidden">
+                    <div class="space-y-1 cursor-pointer">
+                        <div class="bg-white w-8 h-1 rounded-full"></div>
+                        <div class="bg-white w-8 h-1 rounded-full"></div>
+                        <div class="bg-white w-8 h-1 rounded-full"></div>
+                    </div>
+                </div>
+
                 <!-- navigator -->
-                <nav class="flex justify-between flex-1">
+                <nav class="hidden md:flex justify-between flex-1">
                     <!-- menu -->
-                    <div class="flex items-center text-lg space-x-8">
+                    <div class="flex items-center text-lg space-4 lg:space-x-8 ">
                         <a href="#" class="hover:text-[#dc2626] transition duration-500">Home</a>
                         <a href="#" class="hover:text-[#dc2626] transition duration-500">About</a>
                         <a href="#" class="hover:text-[#dc2626] transition duration-500">commination</a>
                     </div>
                     <!-- login area -->
-                    <div class="flex items-center space-x-8">
+                    <div class="flex items-center space-4 lg:space-x-8">
                         <!-- search area -->
                          <form >
                             <div class="group border-r px-4 mx-4 py-1 border-rose-500">
-                                <input type="text" class="bg-transparent opacity-0 group-hover:opacity-100 border-b border-rose-500 focus:outline-none w-44 text-white transition duration-500" >
+                                <input type="text" class="bg-transparent opacity-0 group-hover:opacity-100 border-b border-rose-500 focus:outline-none w-24 lg:w-44 text-white transition duration-500" >
                                 <button><i class="fas fa-search hover:text-[#dc2626] transition duration-500"></i></button>
                             </div>
                             </form>
                             <!-- sing up -->
-                            <div class="flex items-center space-x-8 text-lg">
+                            <div class="flex items-center space-4 lg:space-x-8 text-lg">
                                 <a href="#">login</a>
-                                <a href="#" class="text-white bg-[#dc2626] px-3 py-1 text-[#dc2626] transition duration-500">sing up</a>
+                                <a href="#" class="text-white bg-[#dc2626] px-3 py-1 text-[#dc2626] transition duration-500 whitespace-nowrap">sing up</a>
 
 
                             </div>
