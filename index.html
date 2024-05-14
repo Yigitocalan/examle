@@ -9,62 +9,47 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- header section -->
-        <header class="bg-white sm:py-2  lg:py-5 text-black font-sans ">
-            <!--header container  -->
-            <div class="conteiner flex items-center justify-between space-x-8  lg:space-x-16">
-                <!-- logo -->
-                <div> <a href="#" class=" lg:pl-10  text-4xl lg:text-6xl font-bold text-black hover: rounded-lg duration-500 transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 duration-300">Kafkal</a></div>
-            
-                
-
-             
-                <!-- mobileenu -->
-                <div class="block md:hidden pr-4  ">
-                    <div class="space-y-1 sm:pl-2 cursor-pointer">
-                        <div class="bg-black w-8 h-1 rounded-full"></div>
-                        <div class="bg-black w-8 h-1 rounded-full"></div>
-                        <div class="bg-black w-8 h-1 rounded-full"></div>
-                    </div>
-                </div>
-
-                <!-- navigator -->
-                
-                <nav class="hidden md:flex justify-between   ">
-                    <!-- menu -->
-                    
-                    <div class="flex items-center text-lg  space-4 lg:space-x-8 ">
-                        <a href="#" class=" md:pl-5 hover: rounded-lg text-blue-500 transition  font-bold  hover: rounded-lg duration-500 transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 duration-300">Müşteriler</a>
-                        <a href="#" class="md:pl-5 hover: rounded-lg text-blue-500 transition   font-bold hover: rounded-lg duration-500 transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 duration-300">Hizmetler</a>
-                        <a href="#" class="md:pl-5 hover: rounded-lg text-blue-500 transition  font-bold hover: rounded-lg duration-500 transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 duration-300 whitespace-nowrap">İletişime geçin</a>
-                    </div>
-                    <!-- login area -->
-                    <div class="flex items-center space-4 md:pr-0 xl:pr-5 ">
-                        <!-- search area -->
-                        <form>
-                            <div class="group border-r px-2 lg:px-4 mx-2 lg:mx-4 py-1 border-[#0891b2]">
-                                <input type="text" class="hidden lg:inline-block bg-transparent opacity-0 group-hover:opacity-100 border-b border-[#0891b2] focus:outline-none w-16 lg:w-44 text-black transition duration-500">
-                                <button class="hidden xl:inline-block p-2 lg:p-3"><i class="fas fa-search hover:text-[#0891b2] transition duration-500"></i></button>
-                            </div>
-                        </form>
-                        <!-- sign up and login -->
-                        <div class="flex items-center space-x-4 lg:space-x-8 text-sm lg:text-lg">
-                            <a href="#" class="pl-0 hover:rounded-lg text-blue-500 transition font-bold hover:rounded-lg duration-500 transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 duration-300 md:mx-auto">Login</a>
-                            <a href="#" class="md:pl-0 lg:pl-2 lg:pl-5 hover:rounded-lg text-blue-500 transition font-bold hover:rounded-lg duration-500 transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 duration-300 whitespace-nowrap md:mx-auto">Sign up</a>
-                        </div>
-                    </div>
-                </nav>
+  
+    <!-- menu-nav -->
+   <nav class="flex justify-between items-center">
+    <div>
+        <a href="#" class="pl-3 text-4xl lg:text-6xl font-bold text-black hover:rounded-lg duration-500 transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 duration-300">Kafkal</a>
+    </div>
+    <!-- menu-car -->
+    <div class="flex items-center text-lg space-4 max-md:hidden">
+        
+        <a href="#" class="sm:pr-5 hover:rounded-lg text-blue-500 transition font-bold hover:rounded-lg duration-500 transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 duration-300">Müşteriler</a>
+        <a href="#" class="sm:pr-5 hover:rounded-lg text-blue-500 transition font-bold hover:rounded-lg duration-500 transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 duration-300">Hizmetler</a>
+        <a href="#" class="sm:pr-5 hover:rounded-lg text-blue-500 transition font-bold hover:rounded-lg duration-500 transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 duration-300 whitespace-nowrap">İletişime geçin</a>
+    </div>
+    <div class="flex items-center space-4 xl:pr-5 ">
+        <!-- search area -->
+        <form>
+            <div class="group border-r px-2 lg:px-4 mx-2 lg:mx-4 py-1 border-[#0891b2] max-md:hidden">
+                <input type="text" class="hidden lg:inline-block bg-transparent opacity-0 group-hover:opacity-100 border-b border-[#0891b2] focus:outline-none w-16 lg:w-44 text-black transition duration-500">
+                <button class="hidden xl:inline-block p-2 lg:p-1"><i class="fas fa-search hover:text-[#0891b2] transition duration-500"></i></button>
             </div>
-        </header>
+        </form>
+        <!-- sign up and login -->
+        <div class="flex items-center space-x-4 lg:space-x-8 text-sm lg:text-lg max-md:hidden">
+            <a href="#" class="pl-0 hover:rounded-lg text-blue-500 transition font-bold hover:rounded-lg duration-500 transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 duration-300 md:mx-auto">Login</a>
+            <a href="#" class="md:pl-0 lg:pl-2 lg:pl-5 hover:rounded-lg text-blue-500 transition font-bold hover:rounded-lg duration-500 transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 duration-300 whitespace-nowrap md:mx-auto">Sign up</a>
+        </div>
+    </div>
+    <div class="flex justify-between md:hidden pr-4">
+        <div class="space-y-1 sm:pl-2 cursor-pointer">
+            <div class="bg-black w-8 h-1 rounded-full"></div>
+            <div class="bg-black w-8 h-1 rounded-full"></div>
+            <div class="bg-black w-8 h-1 rounded-full"></div>
+        </div>
+    </div>
+</nav>
 
-        <!-- hero section -->
-
+        <!--section -->
         <section class="h-96 lg:h-128 group relative items-center font-sans	">
-
                 <!-- img -->
                 <img src="/IMG/bg.png" alt="code img" class="h-full w-full object-cover">
-
-                <!-- hero section -->
+                <!--section -->
                 <div class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-[#38bdf8]  ">
                     <!-- content -->
                     <h1 class=" lg:text-7xl mb-5  text-black text-center  bg-[#38bdf8] bg-opacity-50  group-hover:mb-1 duration-500 hover:text-white ">
@@ -82,11 +67,7 @@
               
         
             </section>
-
-
             <!-- COMPANY -->
-
-
             <section >
                 <!-- company container -->
         <div class="container flex flex-col lg:flex-row lg:space-x-16 space-y-12 lg:space-y-0  mx-auto">
